@@ -2,6 +2,8 @@ Archive member included to satisfy reference by file (symbol)
 
 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
                               E:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32a/avr5/crtatmega32a.o (exit)
+e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                              main.o (__do_copy_data)
 
 Discarded input sections
 
@@ -28,13 +30,20 @@ Discarded input sections
                 0x00000000       0x16 GPIO.o
  .text.setPinA  0x00000000       0x16 GPIO.o
  .text.setPinB  0x00000000       0x16 GPIO.o
+ .text.setPinC  0x00000000       0x16 GPIO.o
  .text.resetPinA
                 0x00000000       0x18 GPIO.o
  .text.resetPinB
                 0x00000000       0x18 GPIO.o
+ .text.resetPinC
+                0x00000000       0x18 GPIO.o
  .text.config_PinA_dir
                 0x00000000       0x50 GPIO.o
  .text.config_PinB_dir
+                0x00000000       0x50 GPIO.o
+ .text.config_PinC_dir
+                0x00000000       0x50 GPIO.o
+ .text.config_PinD_dir
                 0x00000000       0x50 GPIO.o
  .text.config_PA
                 0x00000000       0x18 GPIO.o
@@ -50,12 +59,30 @@ Discarded input sections
  .debug_line    0x00000000        0x0 LCD_4bits.o
  .debug_str     0x00000000      0x10a LCD_4bits.o
  .comment       0x00000000       0x31 LCD_4bits.o
+ .text          0x00000000        0x0 LCD_8bits.o
+ .data          0x00000000        0x0 LCD_8bits.o
+ .bss           0x00000000        0x0 LCD_8bits.o
  .text          0x00000000        0x0 main.o
  .data          0x00000000        0x0 main.o
  .bss           0x00000000        0x0 main.o
  .text          0x00000000        0x0 myKit.o
  .data          0x00000000        0x0 myKit.o
  .bss           0x00000000        0x0 myKit.o
+ .text._Led0    0x00000000       0x26 myKit.o
+ .text._Led1    0x00000000       0x26 myKit.o
+ .text._Led2    0x00000000       0x26 myKit.o
+ .text.init_LEDS
+                0x00000000       0x26 myKit.o
+ .debug_info    0x00000000      0x245 myKit.o
+ .debug_abbrev  0x00000000       0x98 myKit.o
+ .debug_loc     0x00000000      0x126 myKit.o
+ .debug_aranges
+                0x00000000       0x38 myKit.o
+ .debug_ranges  0x00000000       0x28 myKit.o
+ .debug_line    0x00000000       0xf2 myKit.o
+ .debug_str     0x00000000      0x16c myKit.o
+ .comment       0x00000000       0x31 myKit.o
+ .debug_frame   0x00000000       0x54 myKit.o
  .text          0x00000000        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  .data          0x00000000        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  .bss           0x00000000        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
@@ -72,6 +99,22 @@ Discarded input sections
                 0x00000000        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.fixed
                 0x00000000        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
 
 Memory Configuration
 
@@ -90,6 +133,7 @@ Linker script and memory map
 LOAD E:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32a/avr5/crtatmega32a.o
 LOAD GPIO.o
 LOAD LCD_4bits.o
+LOAD LCD_8bits.o
 LOAD main.o
 LOAD myKit.o
 START GROUP
@@ -201,7 +245,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x2b2
+.text           0x00000000      0x15a
  *(.vectors)
  .vectors       0x00000000       0x54 E:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32a/avr5/crtatmega32a.o
                 0x00000000                __vector_default
@@ -242,6 +286,8 @@ END GROUP
  *(.init3)
  *(.init3)
  *(.init4)
+ .init4         0x00000060       0x16 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
  *(.init4)
  *(.init5)
  *(.init5)
@@ -252,65 +298,62 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000060        0x8 E:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32a/avr5/crtatmega32a.o
+ .init9         0x00000076        0x8 E:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32a/avr5/crtatmega32a.o
  *(.init9)
  *(.text)
- .text          0x00000068        0x4 E:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32a/avr5/crtatmega32a.o
-                0x00000068                __vector_1
-                0x00000068                __vector_12
-                0x00000068                __bad_interrupt
-                0x00000068                __vector_6
-                0x00000068                __vector_3
-                0x00000068                __vector_11
-                0x00000068                __vector_13
-                0x00000068                __vector_17
-                0x00000068                __vector_19
-                0x00000068                __vector_7
-                0x00000068                __vector_5
-                0x00000068                __vector_4
-                0x00000068                __vector_9
-                0x00000068                __vector_2
-                0x00000068                __vector_15
-                0x00000068                __vector_8
-                0x00000068                __vector_14
-                0x00000068                __vector_10
-                0x00000068                __vector_16
-                0x00000068                __vector_18
-                0x00000068                __vector_20
-                0x0000006c                . = ALIGN (0x2)
+ .text          0x0000007e        0x4 E:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32a/avr5/crtatmega32a.o
+                0x0000007e                __vector_1
+                0x0000007e                __vector_12
+                0x0000007e                __bad_interrupt
+                0x0000007e                __vector_6
+                0x0000007e                __vector_3
+                0x0000007e                __vector_11
+                0x0000007e                __vector_13
+                0x0000007e                __vector_17
+                0x0000007e                __vector_19
+                0x0000007e                __vector_7
+                0x0000007e                __vector_5
+                0x0000007e                __vector_4
+                0x0000007e                __vector_9
+                0x0000007e                __vector_2
+                0x0000007e                __vector_15
+                0x0000007e                __vector_8
+                0x0000007e                __vector_14
+                0x0000007e                __vector_10
+                0x0000007e                __vector_16
+                0x0000007e                __vector_18
+                0x0000007e                __vector_20
+                0x00000082                . = ALIGN (0x2)
  *(.text.*)
- .text.setPinC  0x0000006c       0x16 GPIO.o
-                0x0000006c                setPinC
  .text.setPinD  0x00000082       0x16 GPIO.o
                 0x00000082                setPinD
- .text.resetPinC
-                0x00000098       0x18 GPIO.o
-                0x00000098                resetPinC
  .text.resetPinD
-                0x000000b0       0x18 GPIO.o
-                0x000000b0                resetPinD
- .text.config_PinC_dir
-                0x000000c8       0x50 GPIO.o
-                0x000000c8                config_PinC_dir
- .text.config_PinD_dir
-                0x00000118       0x50 GPIO.o
-                0x00000118                config_PinD_dir
- .text.main     0x00000168       0xae main.o
-                0x00000168                main
- .text._Led0    0x00000216       0x26 myKit.o
-                0x00000216                _Led0
- .text._Led1    0x0000023c       0x26 myKit.o
-                0x0000023c                _Led1
- .text._Led2    0x00000262       0x26 myKit.o
-                0x00000262                _Led2
- .text.init_LEDS
-                0x00000288       0x26 myKit.o
-                0x00000288                init_LEDS
-                0x000002ae                . = ALIGN (0x2)
+                0x00000098       0x18 GPIO.o
+                0x00000098                resetPinD
+ .text.LCD_enable
+                0x000000b0       0x2a LCD_8bits.o
+                0x000000b0                LCD_enable
+ .text.LCD_command
+                0x000000da       0x10 LCD_8bits.o
+                0x000000da                LCD_command
+ .text.LCD_clear
+                0x000000ea        0x8 LCD_8bits.o
+                0x000000ea                LCD_clear
+ .text.init_LCD
+                0x000000f2       0x28 LCD_8bits.o
+                0x000000f2                init_LCD
+ .text.LCD_data
+                0x0000011a       0x10 LCD_8bits.o
+                0x0000011a                LCD_data
+ .text.LCD_str  0x0000012a       0x1e LCD_8bits.o
+                0x0000012a                LCD_str
+ .text.main     0x00000148        0xe main.o
+                0x00000148                main
+                0x00000156                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000002ae        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x000002ae                _exit
-                0x000002ae                exit
+ .fini9         0x00000156        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00000156                _exit
+                0x00000156                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -329,36 +372,38 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000002ae        0x4 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000156        0x4 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x000002b2                _etext = .
+                0x0000015a                _etext = .
 
-.data           0x00800060        0x0 load address 0x000002b2
-                [!provide]                PROVIDE (__data_start, .)
+.data           0x00800060        0x6 load address 0x0000015a
+                0x00800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
  *(.gnu.linkonce.d*)
  *(.rodata)
  *(.rodata*)
+ .rodata.str1.1
+                0x00800060        0x6 main.o
  *(.gnu.linkonce.r*)
-                0x00800060                . = ALIGN (0x2)
-                0x00800060                _edata = .
-                [!provide]                PROVIDE (__data_end, .)
+                0x00800066                . = ALIGN (0x2)
+                0x00800066                _edata = .
+                0x00800066                PROVIDE (__data_end, .)
 
-.bss            0x00800060        0x0
+.bss            0x00800066        0x0
                 [!provide]                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  *(COMMON)
                 [!provide]                PROVIDE (__bss_end, .)
-                0x000002b2                __data_load_start = LOADADDR (.data)
-                0x000002b2                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000015a                __data_load_start = LOADADDR (.data)
+                0x00000160                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800060        0x0
+.noinit         0x00800066        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800060                _end = .
+                0x00800066                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -402,8 +447,8 @@ END GROUP
  *(.comment)
  .comment       0x00000000       0x30 GPIO.o
                                  0x31 (size before relaxing)
+ .comment       0x00000030       0x31 LCD_8bits.o
  .comment       0x00000030       0x31 main.o
- .comment       0x00000030       0x31 myKit.o
 
 .note.gnu.avr.deviceinfo
                 0x00000000       0x3c
@@ -425,60 +470,59 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x130
+.debug_aranges  0x00000000      0x140
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0xd8 GPIO.o
  .debug_aranges
-                0x000000d8       0x20 main.o
+                0x000000d8       0x48 LCD_8bits.o
  .debug_aranges
-                0x000000f8       0x38 myKit.o
+                0x00000120       0x20 main.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000      0xf13
+.debug_info     0x00000000      0xda1
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x4e6 E:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32a/avr5/crtatmega32a.o
  .debug_info    0x000004e6      0x4dc GPIO.o
- .debug_info    0x000009c2      0x30c main.o
- .debug_info    0x00000cce      0x245 myKit.o
+ .debug_info    0x000009c2      0x322 LCD_8bits.o
+ .debug_info    0x00000ce4       0xbd main.o
 
-.debug_abbrev   0x00000000      0x6fc
+.debug_abbrev   0x00000000      0x713
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x4a3 E:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32a/avr5/crtatmega32a.o
  .debug_abbrev  0x000004a3       0xa5 GPIO.o
- .debug_abbrev  0x00000548      0x11c main.o
- .debug_abbrev  0x00000664       0x98 myKit.o
+ .debug_abbrev  0x00000548      0x14c LCD_8bits.o
+ .debug_abbrev  0x00000694       0x7f main.o
 
-.debug_line     0x00000000      0x743
+.debug_line     0x00000000      0x6ce
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x115 E:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32a/avr5/crtatmega32a.o
  .debug_line    0x00000115      0x39d GPIO.o
- .debug_line    0x000004b2      0x19f main.o
- .debug_line    0x00000651       0xf2 myKit.o
+ .debug_line    0x000004b2      0x1c8 LCD_8bits.o
+ .debug_line    0x0000067a       0x54 main.o
 
-.debug_frame    0x00000000      0x20c
+.debug_frame    0x00000000      0x238
  *(.debug_frame)
  .debug_frame   0x00000000      0x194 GPIO.o
- .debug_frame   0x00000194       0x24 main.o
- .debug_frame   0x000001b8       0x54 myKit.o
+ .debug_frame   0x00000194       0x80 LCD_8bits.o
+ .debug_frame   0x00000214       0x24 main.o
 
-.debug_str      0x00000000      0x457
+.debug_str      0x00000000      0x4c8
  *(.debug_str)
  .debug_str     0x00000000      0x196 E:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32a/avr5/crtatmega32a.o
  .debug_str     0x00000196      0x23c GPIO.o
                                 0x295 (size before relaxing)
- .debug_str     0x000003d2       0x78 main.o
-                                0x1d8 (size before relaxing)
- .debug_str     0x0000044a        0xd myKit.o
-                                0x16c (size before relaxing)
+ .debug_str     0x000003d2       0xe5 LCD_8bits.o
+                                0x21b (size before relaxing)
+ .debug_str     0x000004b7       0x11 main.o
+                                0x182 (size before relaxing)
 
-.debug_loc      0x00000000      0x4f6
+.debug_loc      0x00000000      0x4d8
  *(.debug_loc)
  .debug_loc     0x00000000      0x2f8 GPIO.o
- .debug_loc     0x000002f8       0xd8 main.o
- .debug_loc     0x000003d0      0x126 myKit.o
+ .debug_loc     0x000002f8      0x1e0 LCD_8bits.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -498,11 +542,11 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x100
+.debug_ranges   0x00000000      0x110
  *(.debug_ranges)
  .debug_ranges  0x00000000       0xc8 GPIO.o
- .debug_ranges  0x000000c8       0x10 main.o
- .debug_ranges  0x000000d8       0x28 myKit.o
+ .debug_ranges  0x000000c8       0x38 LCD_8bits.o
+ .debug_ranges  0x00000100       0x10 main.o
 
 .debug_macro
  *(.debug_macro)

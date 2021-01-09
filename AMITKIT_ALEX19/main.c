@@ -4,6 +4,7 @@
 #include <util/delay.h>
 #include "GPIO.h"
 #include "myKit.h"
+#include "LCD_8bits.h"
 
 
 
@@ -11,32 +12,10 @@ int main(void)
 {
 	/* Replace with your application code */
 	// PORTA( as OUTPUT
-	init_LEDS();
+	init_LCD();
+	LCD_str("Hello");
 	while (1)
 	{
-		_Led1(OFF);
-		_Led2(OFF);
-		_Led0(ON);
-		
-		
-		_delay_ms(500);
-		
-		_Led0(OFF);
-		_Led2(OFF);
-		_Led1(ON);
-		
-		_delay_ms(500);
-		_Led0(OFF);
-		_Led1(OFF);
-		_Led2(ON);
-		
-		_delay_ms(500);
-		_Led0(OFF);
-		_Led2(OFF);
-		_Led1(ON);
-		
-		_delay_ms(500);
-		
 		
 	}
 }

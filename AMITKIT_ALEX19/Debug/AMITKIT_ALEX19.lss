@@ -3,55 +3,55 @@ AMITKIT_ALEX19.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .text         000002b2  00000000  00000000  00000054  2**1
+  0 .text         0000015a  00000000  00000000  00000074  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .data         00000000  00800060  00800060  00000306  2**0
+  1 .data         00000006  00800060  0000015a  000001ce  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  2 .comment      00000030  00000000  00000000  00000306  2**0
+  2 .comment      00000030  00000000  00000000  000001d4  2**0
                   CONTENTS, READONLY
-  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000338  2**2
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000204  2**2
                   CONTENTS, READONLY
-  4 .debug_aranges 00000130  00000000  00000000  00000374  2**0
+  4 .debug_aranges 00000140  00000000  00000000  00000240  2**0
                   CONTENTS, READONLY, DEBUGGING
-  5 .debug_info   00000f13  00000000  00000000  000004a4  2**0
+  5 .debug_info   00000da1  00000000  00000000  00000380  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_abbrev 000006fc  00000000  00000000  000013b7  2**0
+  6 .debug_abbrev 00000713  00000000  00000000  00001121  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_line   00000743  00000000  00000000  00001ab3  2**0
+  7 .debug_line   000006ce  00000000  00000000  00001834  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_frame  0000020c  00000000  00000000  000021f8  2**2
+  8 .debug_frame  00000238  00000000  00000000  00001f04  2**2
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_str    00000457  00000000  00000000  00002404  2**0
+  9 .debug_str    000004c8  00000000  00000000  0000213c  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_loc    000004f6  00000000  00000000  0000285b  2**0
+ 10 .debug_loc    000004d8  00000000  00000000  00002604  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_ranges 00000100  00000000  00000000  00002d51  2**0
+ 11 .debug_ranges 00000110  00000000  00000000  00002adc  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
 
 00000000 <__vectors>:
    0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
-   4:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-   8:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-   c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-  10:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-  14:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-  18:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-  1c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-  20:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-  24:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-  28:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-  2c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-  30:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-  34:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-  38:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-  3c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-  40:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-  44:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-  48:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-  4c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
-  50:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   4:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+   8:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+   c:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  10:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  14:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  18:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  1c:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  20:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  24:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  28:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  2c:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  30:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  34:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  38:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  3c:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  40:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  44:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  48:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  4c:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  50:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
 
 00000054 <__ctors_end>:
   54:	11 24       	eor	r1, r1
@@ -60,32 +60,32 @@ Disassembly of section .text:
   5a:	d8 e0       	ldi	r29, 0x08	; 8
   5c:	de bf       	out	0x3e, r29	; 62
   5e:	cd bf       	out	0x3d, r28	; 61
-  60:	0e 94 b4 00 	call	0x168	; 0x168 <main>
-  64:	0c 94 57 01 	jmp	0x2ae	; 0x2ae <_exit>
 
-00000068 <__bad_interrupt>:
-  68:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+00000060 <__do_copy_data>:
+  60:	10 e0       	ldi	r17, 0x00	; 0
+  62:	a0 e6       	ldi	r26, 0x60	; 96
+  64:	b0 e0       	ldi	r27, 0x00	; 0
+  66:	ea e5       	ldi	r30, 0x5A	; 90
+  68:	f1 e0       	ldi	r31, 0x01	; 1
+  6a:	02 c0       	rjmp	.+4      	; 0x70 <__do_copy_data+0x10>
+  6c:	05 90       	lpm	r0, Z+
+  6e:	0d 92       	st	X+, r0
+  70:	a6 36       	cpi	r26, 0x66	; 102
+  72:	b1 07       	cpc	r27, r17
+  74:	d9 f7       	brne	.-10     	; 0x6c <__do_copy_data+0xc>
+  76:	0e 94 a4 00 	call	0x148	; 0x148 <main>
+  7a:	0c 94 ab 00 	jmp	0x156	; 0x156 <_exit>
 
-0000006c <setPinC>:
-		break;
-		case out_pin:
-		DDRB |= (1<<pinNumber);
-		break;
-		default:
-		DDRB &= ~(1<<pinNumber);
-  6c:	95 b3       	in	r25, 0x15	; 21
-  6e:	21 e0       	ldi	r18, 0x01	; 1
-  70:	30 e0       	ldi	r19, 0x00	; 0
-  72:	02 c0       	rjmp	.+4      	; 0x78 <setPinC+0xc>
-  74:	22 0f       	add	r18, r18
-  76:	33 1f       	adc	r19, r19
-  78:	8a 95       	dec	r24
-  7a:	e2 f7       	brpl	.-8      	; 0x74 <setPinC+0x8>
-  7c:	29 2b       	or	r18, r25
-  7e:	25 bb       	out	0x15, r18	; 21
-  80:	08 95       	ret
+0000007e <__bad_interrupt>:
+  7e:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
 
 00000082 <setPinD>:
+}
+void resetPinB(int pinNumber){
+	PORTB &= ~(1<<pinNumber);
+}
+void resetPinC(int pinNumber){
+	PORTC &= ~(1<<pinNumber);
   82:	92 b3       	in	r25, 0x12	; 18
   84:	21 e0       	ldi	r18, 0x01	; 1
   86:	30 e0       	ldi	r19, 0x00	; 0
@@ -98,374 +98,178 @@ Disassembly of section .text:
   94:	22 bb       	out	0x12, r18	; 18
   96:	08 95       	ret
 
-00000098 <resetPinC>:
-  98:	95 b3       	in	r25, 0x15	; 21
+00000098 <resetPinD>:
+}
+void resetPinD(int pinNumber){
+	PORTD &= ~(1<<pinNumber);
+  98:	92 b3       	in	r25, 0x12	; 18
   9a:	21 e0       	ldi	r18, 0x01	; 1
   9c:	30 e0       	ldi	r19, 0x00	; 0
-  9e:	02 c0       	rjmp	.+4      	; 0xa4 <resetPinC+0xc>
+  9e:	02 c0       	rjmp	.+4      	; 0xa4 <resetPinD+0xc>
   a0:	22 0f       	add	r18, r18
   a2:	33 1f       	adc	r19, r19
   a4:	8a 95       	dec	r24
-  a6:	e2 f7       	brpl	.-8      	; 0xa0 <resetPinC+0x8>
+  a6:	e2 f7       	brpl	.-8      	; 0xa0 <resetPinD+0x8>
   a8:	20 95       	com	r18
   aa:	29 23       	and	r18, r25
-  ac:	25 bb       	out	0x15, r18	; 21
+  ac:	22 bb       	out	0x12, r18	; 18
   ae:	08 95       	ret
 
-000000b0 <resetPinD>:
-  b0:	92 b3       	in	r25, 0x12	; 18
-  b2:	21 e0       	ldi	r18, 0x01	; 1
-  b4:	30 e0       	ldi	r19, 0x00	; 0
-  b6:	02 c0       	rjmp	.+4      	; 0xbc <resetPinD+0xc>
-  b8:	22 0f       	add	r18, r18
-  ba:	33 1f       	adc	r19, r19
-  bc:	8a 95       	dec	r24
-  be:	e2 f7       	brpl	.-8      	; 0xb8 <resetPinD+0x8>
-  c0:	20 95       	com	r18
-  c2:	29 23       	and	r18, r25
-  c4:	22 bb       	out	0x12, r18	; 18
-  c6:	08 95       	ret
-
-000000c8 <config_PinC_dir>:
-	}
+000000b0 <LCD_enable>:
 }
-void config_PinC_dir(int state,int pinNumber){
-	switch(state){
-  c8:	00 97       	sbiw	r24, 0x00	; 0
-  ca:	19 f0       	breq	.+6      	; 0xd2 <config_PinC_dir+0xa>
-  cc:	01 97       	sbiw	r24, 0x01	; 1
-  ce:	69 f0       	breq	.+26     	; 0xea <config_PinC_dir+0x22>
-  d0:	17 c0       	rjmp	.+46     	; 0x100 <config_PinC_dir+0x38>
-		case in_pin:
-		DDRC &= ~(1<<pinNumber);
-  d2:	24 b3       	in	r18, 0x14	; 20
-  d4:	81 e0       	ldi	r24, 0x01	; 1
-  d6:	90 e0       	ldi	r25, 0x00	; 0
-  d8:	02 c0       	rjmp	.+4      	; 0xde <config_PinC_dir+0x16>
-  da:	88 0f       	add	r24, r24
-  dc:	99 1f       	adc	r25, r25
-  de:	6a 95       	dec	r22
-  e0:	e2 f7       	brpl	.-8      	; 0xda <config_PinC_dir+0x12>
-  e2:	80 95       	com	r24
-  e4:	82 23       	and	r24, r18
-  e6:	84 bb       	out	0x14, r24	; 20
-		break;
-  e8:	08 95       	ret
-		case out_pin:
-		DDRC |= (1<<pinNumber);
-  ea:	24 b3       	in	r18, 0x14	; 20
-  ec:	81 e0       	ldi	r24, 0x01	; 1
-  ee:	90 e0       	ldi	r25, 0x00	; 0
-  f0:	02 c0       	rjmp	.+4      	; 0xf6 <config_PinC_dir+0x2e>
-  f2:	88 0f       	add	r24, r24
-  f4:	99 1f       	adc	r25, r25
-  f6:	6a 95       	dec	r22
-  f8:	e2 f7       	brpl	.-8      	; 0xf2 <config_PinC_dir+0x2a>
-  fa:	82 2b       	or	r24, r18
-  fc:	84 bb       	out	0x14, r24	; 20
-		break;
-  fe:	08 95       	ret
-		default:
-		DDRC &= ~(1<<pinNumber);
- 100:	24 b3       	in	r18, 0x14	; 20
- 102:	81 e0       	ldi	r24, 0x01	; 1
- 104:	90 e0       	ldi	r25, 0x00	; 0
- 106:	02 c0       	rjmp	.+4      	; 0x10c <config_PinC_dir+0x44>
- 108:	88 0f       	add	r24, r24
- 10a:	99 1f       	adc	r25, r25
- 10c:	6a 95       	dec	r22
- 10e:	e2 f7       	brpl	.-8      	; 0x108 <config_PinC_dir+0x40>
- 110:	80 95       	com	r24
- 112:	82 23       	and	r24, r18
- 114:	84 bb       	out	0x14, r24	; 20
- 116:	08 95       	ret
-
-00000118 <config_PinD_dir>:
-	}
+void LCD_clear(void){
+	LCD_command(0x01);
 }
-void config_PinD_dir(int state,int pinNumber){
-	switch(state){
- 118:	00 97       	sbiw	r24, 0x00	; 0
- 11a:	19 f0       	breq	.+6      	; 0x122 <config_PinD_dir+0xa>
- 11c:	01 97       	sbiw	r24, 0x01	; 1
- 11e:	69 f0       	breq	.+26     	; 0x13a <config_PinD_dir+0x22>
- 120:	17 c0       	rjmp	.+46     	; 0x150 <config_PinD_dir+0x38>
-		case in_pin:
-		DDRD &= ~(1<<pinNumber);
- 122:	21 b3       	in	r18, 0x11	; 17
- 124:	81 e0       	ldi	r24, 0x01	; 1
- 126:	90 e0       	ldi	r25, 0x00	; 0
- 128:	02 c0       	rjmp	.+4      	; 0x12e <config_PinD_dir+0x16>
- 12a:	88 0f       	add	r24, r24
- 12c:	99 1f       	adc	r25, r25
- 12e:	6a 95       	dec	r22
- 130:	e2 f7       	brpl	.-8      	; 0x12a <config_PinD_dir+0x12>
- 132:	80 95       	com	r24
- 134:	82 23       	and	r24, r18
- 136:	81 bb       	out	0x11, r24	; 17
-		break;
- 138:	08 95       	ret
-		case out_pin:
-		DDRD |= (1<<pinNumber);
- 13a:	21 b3       	in	r18, 0x11	; 17
- 13c:	81 e0       	ldi	r24, 0x01	; 1
- 13e:	90 e0       	ldi	r25, 0x00	; 0
- 140:	02 c0       	rjmp	.+4      	; 0x146 <config_PinD_dir+0x2e>
- 142:	88 0f       	add	r24, r24
- 144:	99 1f       	adc	r25, r25
- 146:	6a 95       	dec	r22
- 148:	e2 f7       	brpl	.-8      	; 0x142 <config_PinD_dir+0x2a>
- 14a:	82 2b       	or	r24, r18
- 14c:	81 bb       	out	0x11, r24	; 17
-		break;
- 14e:	08 95       	ret
-		default:
-		DDRD &= ~(1<<pinNumber);
- 150:	21 b3       	in	r18, 0x11	; 17
- 152:	81 e0       	ldi	r24, 0x01	; 1
- 154:	90 e0       	ldi	r25, 0x00	; 0
- 156:	02 c0       	rjmp	.+4      	; 0x15c <config_PinD_dir+0x44>
- 158:	88 0f       	add	r24, r24
- 15a:	99 1f       	adc	r25, r25
- 15c:	6a 95       	dec	r22
- 15e:	e2 f7       	brpl	.-8      	; 0x158 <config_PinD_dir+0x40>
- 160:	80 95       	com	r24
- 162:	82 23       	and	r24, r18
- 164:	81 bb       	out	0x11, r24	; 17
- 166:	08 95       	ret
-
-00000168 <main>:
-
-int main(void)
-{
-	/* Replace with your application code */
-	// PORTA( as OUTPUT
-	init_LEDS();
- 168:	0e 94 44 01 	call	0x288	; 0x288 <init_LEDS>
-	while (1)
-	{
-		_Led1(OFF);
- 16c:	80 e0       	ldi	r24, 0x00	; 0
- 16e:	90 e0       	ldi	r25, 0x00	; 0
- 170:	0e 94 1e 01 	call	0x23c	; 0x23c <_Led1>
-		_Led2(OFF);
- 174:	80 e0       	ldi	r24, 0x00	; 0
- 176:	90 e0       	ldi	r25, 0x00	; 0
- 178:	0e 94 31 01 	call	0x262	; 0x262 <_Led2>
-		_Led0(ON);
- 17c:	81 e0       	ldi	r24, 0x01	; 1
- 17e:	90 e0       	ldi	r25, 0x00	; 0
- 180:	0e 94 0b 01 	call	0x216	; 0x216 <_Led0>
+void LCD_enable(void){
+	setPinD(EN);
+  b0:	81 e0       	ldi	r24, 0x01	; 1
+  b2:	90 e0       	ldi	r25, 0x00	; 0
+  b4:	0e 94 41 00 	call	0x82	; 0x82 <setPinD>
 	#else
 		//round up by default
 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
 	#endif
 
 	__builtin_avr_delay_cycles(__ticks_dc);
- 184:	2f ef       	ldi	r18, 0xFF	; 255
- 186:	89 e6       	ldi	r24, 0x69	; 105
- 188:	98 e1       	ldi	r25, 0x18	; 24
- 18a:	21 50       	subi	r18, 0x01	; 1
- 18c:	80 40       	sbci	r24, 0x00	; 0
- 18e:	90 40       	sbci	r25, 0x00	; 0
- 190:	e1 f7       	brne	.-8      	; 0x18a <main+0x22>
- 192:	00 c0       	rjmp	.+0      	; 0x194 <main+0x2c>
- 194:	00 00       	nop
-		
-		
-		_delay_ms(500);
-		
-		_Led0(OFF);
- 196:	80 e0       	ldi	r24, 0x00	; 0
- 198:	90 e0       	ldi	r25, 0x00	; 0
- 19a:	0e 94 0b 01 	call	0x216	; 0x216 <_Led0>
-		_Led2(OFF);
- 19e:	80 e0       	ldi	r24, 0x00	; 0
- 1a0:	90 e0       	ldi	r25, 0x00	; 0
- 1a2:	0e 94 31 01 	call	0x262	; 0x262 <_Led2>
-		_Led1(ON);
- 1a6:	81 e0       	ldi	r24, 0x01	; 1
- 1a8:	90 e0       	ldi	r25, 0x00	; 0
- 1aa:	0e 94 1e 01 	call	0x23c	; 0x23c <_Led1>
- 1ae:	2f ef       	ldi	r18, 0xFF	; 255
- 1b0:	89 e6       	ldi	r24, 0x69	; 105
- 1b2:	98 e1       	ldi	r25, 0x18	; 24
- 1b4:	21 50       	subi	r18, 0x01	; 1
- 1b6:	80 40       	sbci	r24, 0x00	; 0
- 1b8:	90 40       	sbci	r25, 0x00	; 0
- 1ba:	e1 f7       	brne	.-8      	; 0x1b4 <main+0x4c>
- 1bc:	00 c0       	rjmp	.+0      	; 0x1be <main+0x56>
- 1be:	00 00       	nop
-		
-		_delay_ms(500);
-		_Led0(OFF);
- 1c0:	80 e0       	ldi	r24, 0x00	; 0
- 1c2:	90 e0       	ldi	r25, 0x00	; 0
- 1c4:	0e 94 0b 01 	call	0x216	; 0x216 <_Led0>
-		_Led1(OFF);
- 1c8:	80 e0       	ldi	r24, 0x00	; 0
- 1ca:	90 e0       	ldi	r25, 0x00	; 0
- 1cc:	0e 94 1e 01 	call	0x23c	; 0x23c <_Led1>
-		_Led2(ON);
- 1d0:	81 e0       	ldi	r24, 0x01	; 1
- 1d2:	90 e0       	ldi	r25, 0x00	; 0
- 1d4:	0e 94 31 01 	call	0x262	; 0x262 <_Led2>
- 1d8:	2f ef       	ldi	r18, 0xFF	; 255
- 1da:	89 e6       	ldi	r24, 0x69	; 105
- 1dc:	98 e1       	ldi	r25, 0x18	; 24
- 1de:	21 50       	subi	r18, 0x01	; 1
- 1e0:	80 40       	sbci	r24, 0x00	; 0
- 1e2:	90 40       	sbci	r25, 0x00	; 0
- 1e4:	e1 f7       	brne	.-8      	; 0x1de <main+0x76>
- 1e6:	00 c0       	rjmp	.+0      	; 0x1e8 <main+0x80>
- 1e8:	00 00       	nop
-		
-		_delay_ms(500);
-		_Led0(OFF);
- 1ea:	80 e0       	ldi	r24, 0x00	; 0
- 1ec:	90 e0       	ldi	r25, 0x00	; 0
- 1ee:	0e 94 0b 01 	call	0x216	; 0x216 <_Led0>
-		_Led2(OFF);
- 1f2:	80 e0       	ldi	r24, 0x00	; 0
- 1f4:	90 e0       	ldi	r25, 0x00	; 0
- 1f6:	0e 94 31 01 	call	0x262	; 0x262 <_Led2>
-		_Led1(ON);
- 1fa:	81 e0       	ldi	r24, 0x01	; 1
- 1fc:	90 e0       	ldi	r25, 0x00	; 0
- 1fe:	0e 94 1e 01 	call	0x23c	; 0x23c <_Led1>
- 202:	2f ef       	ldi	r18, 0xFF	; 255
- 204:	89 e6       	ldi	r24, 0x69	; 105
- 206:	98 e1       	ldi	r25, 0x18	; 24
- 208:	21 50       	subi	r18, 0x01	; 1
- 20a:	80 40       	sbci	r24, 0x00	; 0
- 20c:	90 40       	sbci	r25, 0x00	; 0
- 20e:	e1 f7       	brne	.-8      	; 0x208 <main+0xa0>
- 210:	00 c0       	rjmp	.+0      	; 0x212 <main+0xaa>
- 212:	00 00       	nop
- 214:	ab cf       	rjmp	.-170    	; 0x16c <main+0x4>
+  b8:	8f e3       	ldi	r24, 0x3F	; 63
+  ba:	9c e9       	ldi	r25, 0x9C	; 156
+  bc:	01 97       	sbiw	r24, 0x01	; 1
+  be:	f1 f7       	brne	.-4      	; 0xbc <LCD_enable+0xc>
+  c0:	00 c0       	rjmp	.+0      	; 0xc2 <LCD_enable+0x12>
+  c2:	00 00       	nop
+	_delay_ms(10);
+	resetPinD(EN);
+  c4:	81 e0       	ldi	r24, 0x01	; 1
+  c6:	90 e0       	ldi	r25, 0x00	; 0
+  c8:	0e 94 4c 00 	call	0x98	; 0x98 <resetPinD>
+  cc:	8f e1       	ldi	r24, 0x1F	; 31
+  ce:	9e e4       	ldi	r25, 0x4E	; 78
+  d0:	01 97       	sbiw	r24, 0x01	; 1
+  d2:	f1 f7       	brne	.-4      	; 0xd0 <LCD_enable+0x20>
+  d4:	00 c0       	rjmp	.+0      	; 0xd6 <LCD_enable+0x26>
+  d6:	00 00       	nop
+  d8:	08 95       	ret
 
-00000216 <_Led0>:
+000000da <LCD_command>:
+	LCD_command(0x38);
+	LCD_command(0x0C);
+	_delay_ms(10);
+}
+void LCD_command(char cmd){
+	Data = cmd;
+  da:	85 bb       	out	0x15, r24	; 21
+	resetPinD(RS);
+  dc:	80 e0       	ldi	r24, 0x00	; 0
+  de:	90 e0       	ldi	r25, 0x00	; 0
+  e0:	0e 94 4c 00 	call	0x98	; 0x98 <resetPinD>
+	LCD_enable();
+  e4:	0e 94 58 00 	call	0xb0	; 0xb0 <LCD_enable>
+  e8:	08 95       	ret
 
-#include "myKit.h"
+000000ea <LCD_clear>:
+	Data = data;
+	setPinD(RS);
+	LCD_enable();
+}
+void LCD_clear(void){
+	LCD_command(0x01);
+  ea:	81 e0       	ldi	r24, 0x01	; 1
+  ec:	0e 94 6d 00 	call	0xda	; 0xda <LCD_command>
+  f0:	08 95       	ret
+
+000000f2 <init_LCD>:
+#include "LCD_8bits.h"
 #include "GPIO.h"
+#include <util/delay.h>
 
-void _Led0(int state){
-	switch(state){
- 216:	00 97       	sbiw	r24, 0x00	; 0
- 218:	39 f0       	breq	.+14     	; 0x228 <_Led0+0x12>
- 21a:	01 97       	sbiw	r24, 0x01	; 1
- 21c:	51 f4       	brne	.+20     	; 0x232 <_Led0+0x1c>
-		case ON:
-		setPinC(Led0);
- 21e:	82 e0       	ldi	r24, 0x02	; 2
- 220:	90 e0       	ldi	r25, 0x00	; 0
- 222:	0e 94 36 00 	call	0x6c	; 0x6c <setPinC>
-		break;
- 226:	08 95       	ret
-		case OFF:
-		resetPinC(Led0);
- 228:	82 e0       	ldi	r24, 0x02	; 2
- 22a:	90 e0       	ldi	r25, 0x00	; 0
- 22c:	0e 94 4c 00 	call	0x98	; 0x98 <resetPinC>
-		break;
- 230:	08 95       	ret
-		default:
-		resetPinC(Led0);
- 232:	82 e0       	ldi	r24, 0x02	; 2
- 234:	90 e0       	ldi	r25, 0x00	; 0
- 236:	0e 94 4c 00 	call	0x98	; 0x98 <resetPinC>
- 23a:	08 95       	ret
+void init_LCD(void){
+	DataDIR = 0xFF;
+  f2:	8f ef       	ldi	r24, 0xFF	; 255
+  f4:	84 bb       	out	0x14, r24	; 20
+	CmdDIR |= (1<<RS)|(1<<EN);
+  f6:	81 b3       	in	r24, 0x11	; 17
+  f8:	83 60       	ori	r24, 0x03	; 3
+  fa:	81 bb       	out	0x11, r24	; 17
+	LCD_clear();
+  fc:	0e 94 75 00 	call	0xea	; 0xea <LCD_clear>
+	LCD_command(0x38);
+ 100:	88 e3       	ldi	r24, 0x38	; 56
+ 102:	0e 94 6d 00 	call	0xda	; 0xda <LCD_command>
+	LCD_command(0x0C);
+ 106:	8c e0       	ldi	r24, 0x0C	; 12
+ 108:	0e 94 6d 00 	call	0xda	; 0xda <LCD_command>
+ 10c:	8f e3       	ldi	r24, 0x3F	; 63
+ 10e:	9c e9       	ldi	r25, 0x9C	; 156
+ 110:	01 97       	sbiw	r24, 0x01	; 1
+ 112:	f1 f7       	brne	.-4      	; 0x110 <init_LCD+0x1e>
+ 114:	00 c0       	rjmp	.+0      	; 0x116 <init_LCD+0x24>
+ 116:	00 00       	nop
+ 118:	08 95       	ret
 
-0000023c <_Led1>:
-	}
+0000011a <LCD_data>:
+	resetPinD(RS);
+	LCD_enable();
+	
+}
+void LCD_data(char data){
+	Data = data;
+ 11a:	85 bb       	out	0x15, r24	; 21
+	setPinD(RS);
+ 11c:	80 e0       	ldi	r24, 0x00	; 0
+ 11e:	90 e0       	ldi	r25, 0x00	; 0
+ 120:	0e 94 41 00 	call	0x82	; 0x82 <setPinD>
+	LCD_enable();
+ 124:	0e 94 58 00 	call	0xb0	; 0xb0 <LCD_enable>
+ 128:	08 95       	ret
+
+0000012a <LCD_str>:
+	_delay_ms(10);
+	resetPinD(EN);
+	_delay_ms(5);
 }
 
-void _Led1(int state){
-	switch(state){
- 23c:	00 97       	sbiw	r24, 0x00	; 0
- 23e:	39 f0       	breq	.+14     	; 0x24e <_Led1+0x12>
- 240:	01 97       	sbiw	r24, 0x01	; 1
- 242:	51 f4       	brne	.+20     	; 0x258 <_Led1+0x1c>
-		case ON:
-		setPinC(Led1);
- 244:	87 e0       	ldi	r24, 0x07	; 7
- 246:	90 e0       	ldi	r25, 0x00	; 0
- 248:	0e 94 36 00 	call	0x6c	; 0x6c <setPinC>
-		break;
- 24c:	08 95       	ret
-		case OFF:
-		resetPinC(Led1);
- 24e:	87 e0       	ldi	r24, 0x07	; 7
- 250:	90 e0       	ldi	r25, 0x00	; 0
- 252:	0e 94 4c 00 	call	0x98	; 0x98 <resetPinC>
-		break;
- 256:	08 95       	ret
-		default:
-		resetPinC(Led1);
- 258:	87 e0       	ldi	r24, 0x07	; 7
- 25a:	90 e0       	ldi	r25, 0x00	; 0
- 25c:	0e 94 4c 00 	call	0x98	; 0x98 <resetPinC>
- 260:	08 95       	ret
-
-00000262 <_Led2>:
-	}
+void LCD_str(char * str){
+ 12a:	cf 93       	push	r28
+ 12c:	df 93       	push	r29
+ 12e:	ec 01       	movw	r28, r24
+	for(int i = 0;str[i] != '\0';i++ ){
+ 130:	88 81       	ld	r24, Y
+ 132:	88 23       	and	r24, r24
+ 134:	31 f0       	breq	.+12     	; 0x142 <LCD_str+0x18>
+ 136:	21 96       	adiw	r28, 0x01	; 1
+		LCD_data(str[i]);
+ 138:	0e 94 8d 00 	call	0x11a	; 0x11a <LCD_data>
+	resetPinD(EN);
+	_delay_ms(5);
 }
 
-
-void _Led2(int state){
-	switch(state){
- 262:	00 97       	sbiw	r24, 0x00	; 0
- 264:	39 f0       	breq	.+14     	; 0x274 <_Led2+0x12>
- 266:	01 97       	sbiw	r24, 0x01	; 1
- 268:	51 f4       	brne	.+20     	; 0x27e <_Led2+0x1c>
-		case ON:
-		setPinD(Led2);
- 26a:	83 e0       	ldi	r24, 0x03	; 3
- 26c:	90 e0       	ldi	r25, 0x00	; 0
- 26e:	0e 94 41 00 	call	0x82	; 0x82 <setPinD>
-		break;
- 272:	08 95       	ret
-		case OFF:
-		resetPinD(Led2);
- 274:	83 e0       	ldi	r24, 0x03	; 3
- 276:	90 e0       	ldi	r25, 0x00	; 0
- 278:	0e 94 58 00 	call	0xb0	; 0xb0 <resetPinD>
-		break;
- 27c:	08 95       	ret
-		default:
-		resetPinD(Led2);
- 27e:	83 e0       	ldi	r24, 0x03	; 3
- 280:	90 e0       	ldi	r25, 0x00	; 0
- 282:	0e 94 58 00 	call	0xb0	; 0xb0 <resetPinD>
- 286:	08 95       	ret
-
-00000288 <init_LEDS>:
+void LCD_str(char * str){
+	for(int i = 0;str[i] != '\0';i++ ){
+ 13c:	89 91       	ld	r24, Y+
+ 13e:	81 11       	cpse	r24, r1
+ 140:	fb cf       	rjmp	.-10     	; 0x138 <LCD_str+0xe>
+		LCD_data(str[i]);
 	}
-}
+ 142:	df 91       	pop	r29
+ 144:	cf 91       	pop	r28
+ 146:	08 95       	ret
 
-void init_LEDS(){
-	config_PinC_dir(out_pin, Led0);
- 288:	62 e0       	ldi	r22, 0x02	; 2
- 28a:	70 e0       	ldi	r23, 0x00	; 0
- 28c:	81 e0       	ldi	r24, 0x01	; 1
- 28e:	90 e0       	ldi	r25, 0x00	; 0
- 290:	0e 94 64 00 	call	0xc8	; 0xc8 <config_PinC_dir>
-	config_PinC_dir(out_pin, Led1);
- 294:	67 e0       	ldi	r22, 0x07	; 7
- 296:	70 e0       	ldi	r23, 0x00	; 0
- 298:	81 e0       	ldi	r24, 0x01	; 1
- 29a:	90 e0       	ldi	r25, 0x00	; 0
- 29c:	0e 94 64 00 	call	0xc8	; 0xc8 <config_PinC_dir>
-	config_PinD_dir(out_pin, Led2);
- 2a0:	63 e0       	ldi	r22, 0x03	; 3
- 2a2:	70 e0       	ldi	r23, 0x00	; 0
- 2a4:	81 e0       	ldi	r24, 0x01	; 1
- 2a6:	90 e0       	ldi	r25, 0x00	; 0
- 2a8:	0e 94 8c 00 	call	0x118	; 0x118 <config_PinD_dir>
- 2ac:	08 95       	ret
+00000148 <main>:
 
-000002ae <_exit>:
- 2ae:	f8 94       	cli
+int main(void)
+{
+	/* Replace with your application code */
+	// PORTA( as OUTPUT
+	init_LCD();
+ 148:	0e 94 79 00 	call	0xf2	; 0xf2 <init_LCD>
+	LCD_str("Hello");
+ 14c:	80 e6       	ldi	r24, 0x60	; 96
+ 14e:	90 e0       	ldi	r25, 0x00	; 0
+ 150:	0e 94 95 00 	call	0x12a	; 0x12a <LCD_str>
+ 154:	ff cf       	rjmp	.-2      	; 0x154 <main+0xc>
 
-000002b0 <__stop_program>:
- 2b0:	ff cf       	rjmp	.-2      	; 0x2b0 <__stop_program>
+00000156 <_exit>:
+ 156:	f8 94       	cli
+
+00000158 <__stop_program>:
+ 158:	ff cf       	rjmp	.-2      	; 0x158 <__stop_program>

@@ -39,6 +39,7 @@ SUBDIRS :=
 C_SRCS +=  \
 ../GPIO.c \
 ../LCD_4bits.c \
+../LCD_8bits.c \
 ../main.c \
 ../myKit.c
 
@@ -52,24 +53,28 @@ ASM_SRCS +=
 OBJS +=  \
 GPIO.o \
 LCD_4bits.o \
+LCD_8bits.o \
 main.o \
 myKit.o
 
 OBJS_AS_ARGS +=  \
 GPIO.o \
 LCD_4bits.o \
+LCD_8bits.o \
 main.o \
 myKit.o
 
 C_DEPS +=  \
 GPIO.d \
 LCD_4bits.d \
+LCD_8bits.d \
 main.d \
 myKit.d
 
 C_DEPS_AS_ARGS +=  \
 GPIO.d \
 LCD_4bits.d \
+LCD_8bits.d \
 main.d \
 myKit.d
 
@@ -95,6 +100,13 @@ LINKER_SCRIPT_DEP+=
 	
 
 ./LCD_4bits.o: .././LCD_4bits.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)E:\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"E:\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\include"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega32a -B "E:\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\gcc\dev\atmega32a" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+./LCD_8bits.o: .././LCD_8bits.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)E:\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"E:\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\include"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega32a -B "E:\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\gcc\dev\atmega32a" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
